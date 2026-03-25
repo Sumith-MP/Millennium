@@ -22,7 +22,7 @@ using a working contact form powered by Formspree.
 
 ## 📂 Project Structure
 
-construction-website/ │ ├── index.html ├── style.css ├── script.js ├──
+construction-website/ │ ├── index.html ├── style.css ├── 
 images/ └── README.md
 
 ## 🌐 Live Demo
