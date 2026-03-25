@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Builders in Bellary | Home Construction & Interior Designers | Millennium Architects</title>
+<meta name="description" content="Looking for the best builders in Bellary? Millennium Architects offers end-to-end home construction, interior design, 3D planning, steel kitchens & elevators.">
+<meta name="keywords" content="Bellary builders, best builders in Bellary, construction company Bellary, home construction Bellary, interior designers Bellary, turnkey construction Bellary">
+<!-- <title>Millennium Architects & Builders | Ballary</title> -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: #222; background: #fff; }
+
+  /* NAV */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 48px; background: #fff;
+    border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100;
+  }
+  .logo img { height: 52px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: 13px; color: #555; transition: color .2s; }
+  .nav-links a:hover { color: #B8860B; }
+  .nav-btn {
+    background: #B8860B; color: #fff;
+    padding: 10px 24px; font-size: 13px; text-decoration: none;
+    border-radius: 4px; transition: background .2s;
+  }
+  .nav-btn:hover { background: #9a7009; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80') center/cover;
+    color: #fff; text-align: center;
+    padding: 140px 24px;
+  }
+  .hero p { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #E8C97A; margin-bottom: 16px; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 6vw, 72px); line-height: 1.2; margin-bottom: 20px; }
+  .hero span { color: #E8C97A; }
+  .hero-sub { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 40px; font-weight: 300; }
+  .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold { background: #B8860B; color: #fff; padding: 14px 36px; text-decoration: none; border-radius: 4px; font-size: 14px; }
+  .btn-white { border: 1px solid #fff; color: #fff; padding: 14px 36px; text-decoration: none; border-radius: 4px; font-size: 14px; }
+
+  /* STATS */
+  .stats {
+    display: flex; justify-content: center; gap: 0;
+    background: #1a1a1a; color: #fff;
+  }
+  .stat { text-align: center; padding: 36px 60px; border-right: 1px solid #333; }
+  .stat:last-child { border-right: none; }
+  .stat-n { font-family: 'Playfair Display', serif; font-size: 40px; color: #B8860B; }
+  .stat-l { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #aaa; margin-top: 4px; }
+
+  /* SECTIONS */
+  section { padding: 80px 48px; }
+  .section-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #B8860B; margin-bottom: 12px; }
+  h2 { font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 48px); color: #1a1a1a; margin-bottom: 16px; }
+  .lead { font-size: 15px; color: #666; line-height: 1.8; max-width: 580px; }
+
+  /* SERVICES */
+  .services { background: #f9f7f4; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+  .card {
+    background: #fff; padding: 36px 28px; border-radius: 8px;
+    border: 1px solid #eee;
+    transition: box-shadow .3s, transform .3s;
+  }
+  .card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+  .card-icon { font-size: 32px; margin-bottom: 16px; }
+  .card h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: #1a1a1a; margin-bottom: 10px; }
+  .card p { font-size: 14px; color: #666; line-height: 1.7; }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .about-img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }
+  .about-text p { font-size: 15px; color: #555; line-height: 1.9; margin-top: 16px; }
+
+  /* CONTACT */
+  .contact { background: #f9f7f4; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 48px; }
+  .info-item { display: flex; gap: 16px; margin-bottom: 28px; align-items: flex-start; }
+  .info-icon { font-size: 22px; margin-top: 2px; }
+  .info-text label { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #B8860B; margin-bottom: 4px; }
+  .info-text p { font-size: 14px; color: #444; line-height: 1.6; }
+  .form { display: flex; flex-direction: column; gap: 16px; }
+  .form input, .form select, .form textarea {
+    padding: 12px 16px; border: 1px solid #ddd; border-radius: 4px;
+    font-family: 'Inter', sans-serif; font-size: 14px; color: #333;
+    outline: none; transition: border-color .2s; background: #fff;
+  }
+  .form input:focus, .form select:focus, .form textarea:focus { border-color: #B8860B; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .submit-btn {
+    background: #B8860B; color: #fff; border: none;
+    padding: 14px; font-size: 14px; border-radius: 4px;
+    cursor: pointer; letter-spacing: 1px; transition: background .2s;
+  }
+  .submit-btn:hover { background: #9a7009; }
+
+  /* FOOTER */
+  footer {
+    background: #1a1a1a; color: #aaa;
+    text-align: center; padding: 32px 24px; font-size: 13px;
+  }
+  footer a { color: #B8860B; text-decoration: none; }
+
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .nav-links, .nav-btn { display: none; }
+    section { padding: 60px 20px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .stats { flex-wrap: wrap; }
+    .stat { border-right: none; border-bottom: 1px solid #333; width: 50%; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+  .whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+.call-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #B8860B;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 999;
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Millennium Architects & Builders",
+  "telephone": "+918088083637",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bellary",
+    "addressRegion": "Karnataka",
+    "postalCode": "583101",
+    "addressCountry": "IN"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><img src="logo.jpg" alt="Millennium Architects & Builders Logo"></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn">Get a Quote</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p>Ballary, Karnataka</p>
+  <h1>Building Your <span>Dream</span><br>From Ground Up</h1>
+  <p class="hero-sub">End-to-end construction, design &amp; interiors — all under one roof</p>
+  <div class="hero-btns">
+    <a href="#services" class="btn-gold">Our Services</a>
+    <a href="#contact" class="btn-white">Contact Us</a>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Projects Done</div></div>
+  <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Years Experience</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Client Satisfaction</div></div>
+  <div class="stat"><div class="stat-n">20+</div><div class="stat-l">Expert Team</div></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="section-label">What We Offer</div>
+  <h2>Our Services</h2>
+  <p class="lead">Complete construction and design solutions tailored for homes, commercial spaces, and beyond.</p>
+  <div class="services-grid">
+    <div class="card">
+      <div class="card-icon">🏗️</div>
+      <h3>End-to-End Building</h3>
+      <p>From foundation to finishing — we handle every stage of construction with quality materials and skilled craftsmen.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🖥️</div>
+      <h3>3D Design</h3>
+      <p>See your home before it's built. Realistic 3D renders and floor plans to help you visualize every detail.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛋️</div>
+      <h3>Interior Design</h3>
+      <p>Elegant, functional interiors crafted to your style — from living spaces to bedrooms and offices.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔩</div>
+      <h3>Steel Kitchen Setup</h3>
+      <p>Custom modular steel kitchens for homes and commercial spaces — durable, hygienic, and stylish.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛗</div>
+      <h3>Customized Elevators</h3>
+      <p>Bespoke home and commercial lifts designed for safety, space, and elegance. Fully installed and certified.</p>
+    </div>
+    <div class="card" style="background:#1a1a1a; border-color:#333;">
+      <div class="card-icon">💬</div>
+      <h3 style="color:#E8C97A;">Free Consultation</h3>
+      <p style="color:#aaa;">Not sure where to start? Talk to our experts and get a free site assessment and quote.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-label">Our Location</div>
+  <h2>Visit Our Office in Bellary</h2>
+
+  <iframe
+    src="https://www.google.com/maps?q=Parvathi+Nagar+Bellary+Karnataka&output=embed"
+    width="100%"
+    height="350"
+    style="border:0; border-radius:8px; margin-top:20px;"
+    loading="lazy">
+  </iframe>
+
+  <div style="margin-top:20px;">
+    <a href="https://maps.app.goo.gl/Gm8v8pxW2i6Qdc7a7"
+       target="_blank"
+       class="btn-gold">
+       Get Directions
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <img class="about-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction site">
+    <div class="about-text">
+      <div class="section-label">About Us</div>
+      <h2>Ballary's Trusted Builders</h2>
+      <p>Millennium Architects &amp; Builders has been serving Ballary and the surrounding region for over 10 years. We combine traditional craftsmanship with modern design and engineering to deliver spaces that last generations.</p>
+      <p>Our team of architects, engineers, and interior designers work together seamlessly — so you get one point of contact for your entire project, from blueprint to handover.</p>
+      <a href="#contact" class="btn-gold" style="display:inline-block; margin-top:28px; border-radius:4px; font-size:14px;">Talk to Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="section-label">Get in Touch</div>
+  <h2>Let's Build Together</h2>
+  <div class="contact-grid">
+    <div>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <label>Address</label>
+          <p>3rd Floor, Dodda Sharanappa Towers, ParvathiNagar Main Rd, near Durgamma Temple, beside Ganesh petrol bunk, KHB Colony, Parvathi Nagar, Sanganakal<br>Ballary, Karnataka — 583 101</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <label>Phone</label>
+          <p>+91 8088083637 &nbsp;|&nbsp; +91 9035145011</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div class="info-text">
+          <label>Email</label>
+          <p>millenniumab9694@gmail.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div class="info-text">
+          <label>Hours</label>
+          <p>Mon – Sat: 9:00 AM – 6:30 PM</p>
+        </div>
+      </div>
+    </div>
+    <form class="form" action="https://formspree.io/f/mbdprznr" method="POST">
+      <div class="form-row">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="tel" name="Phone" placeholder="Phone Number">
+      </div>
+      <input type="email" name="Email" placeholder="Email Address">
+      <select name="Service">
+        <option value="">Select a Service</option>
+        <option>End-to-End Building</option>
+        <option>3D Design</option>
+        <option>Interior Design</option>
+        <option>Steel Kitchen Setup</option>
+        <option>Customized Elevators</option>
+        <option>General Enquiry</option>
+      </select>
+      <textarea rows="4" name="Message" placeholder="Tell us about your project..."></textarea>
+      <button type="submit" class="submit-btn">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <strong style="color:#fff">Millennium Architects &amp; Builders</strong>, Ballary, Karnataka. All rights reserved.</p>
+  <p style="margin-top:8px">
+    📞 <a href="tel:+918088083637">+91 8088083637</a> &nbsp;|&nbsp;
+    📞 <a href="tel:+919035145011">+91 9035145011</a> &nbsp;|&nbsp;
+    ✉️ <a href="mailto:millenniumab9694@gmail.com">millenniumab9694@gmail.com</a>
+  </p>
+</footer>
+<a href="https://wa.me/918088083637" target="_blank" class="whatsapp-btn">
+  💬 Chat on WhatsApp
+</a>
+<a href="tel:+918088083637" class="call-btn">📞 Call Now</a>
+</body>
+</html>
